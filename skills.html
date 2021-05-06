@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <script src="https://kit.fontawesome.com/f386af9574.js" crossorigin="anonymous"></script>
+    <title>Amen Nkala</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html" class="active">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>  
+        </div>
+        <div class="content">
+            <h1>My Skills</h1>
+           <ul>
+                <li><h3>HTML</h3>
+                    <span class="bar">
+                        <span class="html"></span>
+                    </span>
+                </li>
+                <li><h3>CSS</h3>
+                    <span class="bar">
+                        <span class="css"></span>
+                    </span>
+                </li>
+                <li><h3>Javascript</h3>
+                    <span class="bar">
+                        <span class="javascript"></span>
+                    </span>
+                </li>
+                <li><h3>C#</h3>
+                    <span class="bar">
+                        <span class="c-sharp"></span>
+                    </span>
+                </li>
+                <li><h3>ASP.NET</h3>
+                    <span class="bar">
+                        <span class="asp"></span>
+                    </span>
+                </li>
+                <li><h3>Java</h3>
+                    <span class="bar">
+                        <span class="java"></span>
+                    </span>
+                </li>
+                <li><h3>T-SQL</h3>
+                    <span class="bar">
+                        <span class="sql"></span>
+                    </span>
+                </li>
+           </ul>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="https://twitter.com/NkalaAmen" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://www.instagram.com/amenemdadude/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/amen-nkala-05777528/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/AmenNkala" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            </ul>  
+            <div class="contacts">
+                <i class="fas fa-envelope-square"><a href="mailto:amennkala@gmail.com">amennkala@gmail.com</a></i>
+                <i class="fas fa-phone-square-alt"><a href="tel:+27659814675">+27659814675</a></i>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    const currentLocation = location.href;
+    const menuItem = document.querySelector('a');
+    const menuLength = menuItem.length;
+    for(let i = 0; i <menuLength; i++){
+        if(menuItem[i].href === currentLocation){
+            menuItem[i].className = "active";
+        }
+    }
+    </script>
+</body>
+</html>

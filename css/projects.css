@@ -1,0 +1,15 @@
+.content{
+    background: url(../images/code.jpg);
+    text-align: center;
+    padding-top: 15%;
+}
+
+.content h2{
+    color: yellow;
+}
+
+.content img{
+    width: 60px;
+    height: auto;
+    
+}

@@ -1,0 +1,38 @@
+.content h1{
+    color: #5CD85A;
+    text-align: center;
+}
+
+.content h1 span{
+    color: red;
+}
+
+.content h3{
+    text-align: center;
+    color: #107869;
+}
+
+.content p{
+    font-size: 1.2rem;
+    color: #5CD85A;
+}
+
+.content p span{
+    color: #107869; 
+}
+
+.resume-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    background: #867bfb;
+    padding: 0.5em 2em;
+    border-radius: 40px;
+    margin: 1em 0;
+    transition: 0.3s;
+    color: #107869;
+}
+
+.resume-btn:hover{
+    box-shadow: 0 10px 50px rgba(188, 197, 216, 1);
+}

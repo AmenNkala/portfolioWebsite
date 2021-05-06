@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/f386af9574.js" crossorigin="anonymous"></script>
+    <title>Amen Nkala</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>  
+        </div>
+        <div class="content">
+            <div class="contact-section">
+                <h1>Get In Touch</h1>
+                <div class="border"></div>
+                <form type="text" action="https://formspree./f/xqkwegjp" method="POST" id="my-form">
+                    <input type="text" name="name" class="contact-form-text" placeholder="Your name" required>
+                    <input type="email" name="email" class="contact-form-text" placeholder="Your email" required>
+                    <input type="text" name="phone" class="contact-form-text" placeholder="Your phone" required>
+                    <textarea name="message" class="contact-form-text" placeholder="Your message" required></textarea>
+                    <input type="submit" class="contact-form-btn" value="Send">
+                </form>
+            </div>
+            <div id="status"></div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="https://twitter.com/NkalaAmen" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://www.instagram.com/amenemdadude/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/amen-nkala-05777528/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/AmenNkala" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            </ul>  
+            <div class="contacts">
+                <i class="fas fa-envelope-square"><a href="mailto:amennkala@gmail.com">amennkala@gmail.com</a></i>
+                <i class="fas fa-phone-square-alt"><a href="tel:+27659814675">+27659814675</a></i>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    const currentLocation = location.href;
+    const menuItem = document.querySelector('a');
+    const menuLength = menuItem.length;
+    for(let i = 0; i <menuLength; i++){
+        if(menuItem[i].href === currentLocation){
+            menuItem[i].className = "active";
+        }
+    }
+    </script>
+</body>
+</html>
